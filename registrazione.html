@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione - INOUT HOTEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="placeholder_logo.png" alt="INOUT HOTEL Logo" class="logo">
+            </div>
+    </header>
+    <main class="container">
+        <h1>Registrazione Visitatore</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nome">Nome o Alias:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="professione">Professione:</label>
+                <input type="text" id="professione" name="professione" required>
+            </div>
+            <div class="form-group">
+                <label for="interessi">Aree di Interesse (es. Domotica, Wellness, Design):</label>
+                <input type="text" id="interessi" name="interessi">
+            </div>
+            <button type="submit" class="btn">Registrati e Inizia Esperienza</button>
+        </form>
+        <p id="registrationMessage" class="message" style="display:none;"></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 INOUT HOTEL Experience</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporto Esperienziale - INOUT HOTEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="placeholder_logo.png" alt="INOUT HOTEL Logo" class="logo">
+        </div>
+        <div class="user-greeting" id="userGreetingHeader"></div>
+    </header>
+    <main class="container">
+        <h1>Il Tuo Passaporto Esperienziale</h1>
+        <div id="passportData">
+            <h2>Ciao <span id="passportUserName">[Nome Utente]</span>!</h2>
+            <p><strong>Professione:</strong> <span id="passportProfessione">[Professione]</span></p>
+            <p><strong>Aree di Interesse Iniziali:</strong> <span id="passportInteressi">[Interessi]</span></p>
+            
+            <h3>Prodotti Esplorati e Preferenze:</h3>
+            <div id="passportProductDetails">
+                <p><em>Nessun prodotto esplorato o quiz completato ancora.</em></p>
+            </div>
+        </div>
+        <button onclick="window.print()" class="btn" style="margin-top:20px;">Stampa Passaporto</button>
+        <button id="clearDataBtn" class="btn btn-outline" style="margin-top:10px;">Inizia una Nuova Esperienza (Cancella Dati)</button>
+         <p style="margin-top: 20px;"><a href="registrazione.html" class="btn-link">Torna alla registrazione</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 INOUT HOTEL Experience</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

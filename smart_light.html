@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Light - INOUT HOTEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="placeholder_logo.png" alt="INOUT HOTEL Logo" class="logo">
+        </div>
+        <div class="user-greeting" id="userGreetingHeader"></div>
+    </header>
+    <main class="container product-page" id="smartLightPage">
+        <h1 id="productTitle">Sistema di Illuminazione Intelligente</h1>
+         <img src="placeholder_smartlight.jpg" alt="Smart Light" class="product-image">
+         <p id="welcomeMessage">Ciao <span id="userNamePlaceholder">[Nome Utente]</span>! Esploriamo insieme le luci intelligenti. Ecco le opzioni:</p>
+
+        <div id="initialActions">
+            <button class="btn btn-outline" id="btnShowDetails">SCOPRI I DETTAGLI</button>
+            <button class="btn" id="btnStartExperience">VIVI L'ESPERIENZA</button>
+        </div>
+
+        <div id="productDetails" style="display:none;">
+            <h2>Dettagli Prodotto: Smart Light</h2>
+            <p>Le nostre luci intelligenti ti permettono di controllare l'atmosfera di ogni stanza con la voce o tramite app. Scegli tra milioni di colori, imposta timer e scenari personalizzati per il massimo comfort e risparmio energetico.</p>
+            <ul>
+                <li>Controllo Vocale (compatibile Alexa, Google Home)</li>
+                <li>App Dedicata con Scenari</li>
+                <li>Milioni di Colori e Tonalità di Bianco</li>
+                <li>Programmazione Oraria</li>
+                <li>Basso Consumo Energetico</li>
+            </ul>
+            <button class="btn btn-buy">ACQUISTA</button>
+            <button class="btn btn-outline btn-back" id="btnBackToLandingFromDetails">INDIETRO</button>
+        </div>
+
+        <div id="experienceQuiz" style="display:none;">
+            <h2>Test Esperienziale: Smart Light</h2>
+            <div class="quiz-question" id="quizQuestion1">
+                <p>Domanda 1: Preferisci controllare le luci principalmente con la voce, tramite app o con interruttori tradizionali potenziati?</p>
+                <button class="btn-quiz-option" data-answer="voce">Voce</button>
+                <button class="btn-quiz-option" data-answer="app">App</button>
+                <button class="btn-quiz-option" data-answer="interruttori">Interruttori Smart</button>
+            </div>
+            <div class="quiz-question" id="quizQuestion2" style="display:none;">
+                <p>Domanda 2: L'illuminazione colorata è una funzionalità che useresti spesso per creare atmosfera?</p>
+                <button class="btn-quiz-option" data-answer="si molto">Sì, molto</button>
+                <button class="btn-quiz-option" data-answer="occasionalmente">Occasionalmente</button>
+                <button class="btn-quiz-option" data-answer="raramente">Raramente o mai</button>
+            </div>
+            <div class="quiz-question" id="quizQuestion3" style="display:none;">
+                <p>Domanda 3: Quanto valuti la possibilità di programmare accensione e spegnimento automatico delle luci per sicurezza o comfort?</p>
+                <button class="btn-quiz-option" data-answer="essenziale">Essenziale</button>
+                <button class="btn-quiz-option" data-answer="utile ma non indispensabile">Utile ma non indispensabile</button>
+                <button class="btn-quiz-option" data-answer="poco importante">Poco importante</button>
+            </div>
+             <p id="quizCompleteMessage" style="display:none;" class="message">Grazie per aver completato il test! Le tue preferenze sono state salvate.</p>
+            <button class="btn btn-outline btn-back" id="btnBackToLandingFromQuiz" style="display:none;">TORNA ALLA SCELTA</button>
+        </div>
+        <a href="passaporto.html" class="btn btn-link" id="viewPassportLink" style="display:none; margin-top: 20px;">Visualizza il tuo Passaporto Esperienziale</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 INOUT HOTEL Experience</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

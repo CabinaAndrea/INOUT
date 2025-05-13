@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lock - INOUT HOTEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="logo-container">
+            <img src="placeholder_logo.png" alt="INOUT HOTEL Logo" class="logo">
+        </div>
+        <div class="user-greeting" id="userGreetingHeader"></div>
+    </header>
+    <main class="container product-page" id="smartLockPage">
+        <h1 id="productTitle">Eufy - Smart Lock System</h1>
+        <img src="placeholder_smartlock.jpg" alt="Smart Lock" class="product-image">
+        <p id="welcomeMessage">Ciao <span id="userNamePlaceholder">[Nome Utente]</span>! Sembra che tu sia interessato/a a questo prodotto. Ecco cosa ti proponiamo:</p>
+
+        <div id="initialActions">
+            <button class="btn btn-outline" id="btnShowDetails">SCOPRI I DETTAGLI</button>
+            <button class="btn" id="btnStartExperience">VIVI L'ESPERIENZA</button>
+        </div>
+
+        <div id="productDetails" style="display:none;">
+            <h2>Dettagli Prodotto: Smart Lock</h2>
+            <p>La nostra Smart Lock offre sicurezza all'avanguardia con riconoscimento impronte, codice, app e chiave fisica. Integra un sensore di movimento e audio bidirezionale. Facile da installare, nessuna fee mensile.</p>
+            <ul>
+                <li>Sensore Impronte Digitali</li>
+                <li>Accesso tramite App Remoto</li>
+                <li>Codice Numerico Personalizzabile</li>
+                <li>Resistente alle intemperie</li>
+                <li>Notifiche di accesso in tempo reale</li>
+            </ul>
+            <button class="btn btn-buy">ACQUISTA</button>
+            <button class="btn btn-outline btn-back" id="btnBackToLandingFromDetails">INDIETRO</button>
+        </div>
+
+        <div id="experienceQuiz" style="display:none;">
+            <h2>Test Esperienziale: Smart Lock</h2>
+            <div class="quiz-question" id="quizQuestion1">
+                <p>Domanda 1: Quanto è importante per te poter aprire la porta senza chiavi fisiche?</p>
+                <button class="btn-quiz-option" data-answer="molto">Molto</button>
+                <button class="btn-quiz-option" data-answer="abbastanza">Abbastanza</button>
+                <button class="btn-quiz-option" data-answer="poco">Poco</button>
+            </div>
+            <div class="quiz-question" id="quizQuestion2" style="display:none;">
+                <p>Domanda 2: Vorresti ricevere notifiche sul tuo smartphone ogni volta che qualcuno entra o esce?</p>
+                <button class="btn-quiz-option" data-answer="si">Sì, sempre</button>
+                <button class="btn-quiz-option" data-answer="a volte">Solo in certi orari</button>
+                <button class="btn-quiz-option" data-answer="no">No, non mi interessa</button>
+            </div>
+            <div class="quiz-question" id="quizQuestion3" style="display:none;">
+                <p>Domanda 3: Consideri utile poter creare codici di accesso temporanei per ospiti o personale di servizio?</p>
+                <button class="btn-quiz-option" data-answer="molto utile">Molto utile</button>
+                <button class="btn-quiz-option" data-answer="utile">Utile</button>
+                <button class="btn-quiz-option" data-answer="non necessario">Non necessario</button>
+            </div>
+            <p id="quizCompleteMessage" style="display:none;" class="message">Grazie per aver completato il test! Le tue preferenze sono state salvate.</p>
+            <button class="btn btn-outline btn-back" id="btnBackToLandingFromQuiz" style="display:none;">TORNA ALLA SCELTA</button>
+        </div>
+         <a href="passaporto.html" class="btn btn-link" id="viewPassportLink" style="display:none; margin-top: 20px;">Visualizza il tuo Passaporto Esperienziale</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 INOUT HOTEL Experience</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
